@@ -22,7 +22,6 @@ decorator==5.0.9
 defusedxml==0.7.1
 entrypoints==0.3
 Flask==1.1.2
-get==2019.4.13
 gitdb==4.0.7
 GitPython==3.1.14
 html5lib==1.0.1
