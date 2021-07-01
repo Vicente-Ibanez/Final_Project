@@ -21,12 +21,12 @@ import numpy as np
 # title of webpage
 st.title(f"{'Welcome to the Luxury Used Car Store':^s}")
 # images at the top of the site, and resizing them + adding them in columns
-img = Image.open("/Users/Vinny/Desktop/Summer 2021/CS230/Project File/tesla.jpeg")
+img = Image.open("tesla.jpeg")
 img = img.resize((200, 200))
-img2 = Image.open("/Users/Vinny/Desktop/Summer 2021/CS230/Project File/ford.jpeg")
+img2 = Image.open("ford.jpeg")
 img2 = img2.resize((200, 200))
 img2 = ImageOps.mirror(img2)
-img3 = Image.open("/Users/Vinny/Desktop/Summer 2021/CS230/Project File/chevy.jpeg")
+img3 = Image.open("chevy.jpeg")
 img3 = img3.resize((200, 200))
 cols = st.beta_columns([4, 4, 4])
 cols[0].image(img2)
@@ -195,7 +195,7 @@ def manufacturer_options(df):
 
 def main():
     # Reads file
-    with open("/Users/Vinny/Desktop/Summer 2021/CS230/Project File/vehicles_copy.csv", 'r') as csv_file:
+    with open("vehicles_copy.csv", 'r') as csv_file:
         data = pd.read_csv(csv_file)
     # price range section
     price_tuple = price_range(data)
